@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="htpps://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+</head>
+<body>
+    <main>
+        <form   action="#" th:action="@{/cadastrar_jogador}"  th:object="${jogador}" method="post" >
+
+        <h1 class="h1titulo">Cadastro</h1>
+        
+        <label class="lbl2" for="nome">Nome</label> <br> <br>
+
+        <input th:field="*{nome}" id="nome" type="text" class="lbl" placeholder="Digite seu Nome Completo:"> <br> <br>
+
+        <label  class="lbl2" for="pontos">Pontos</label> <br> <br>
+
+        <input th:field="*{pontos}" id="pontos" type="number" class="lbl" placeholder="Digite seus pontos:"> <br> <br>
+
+        <label  class="lbl2" for="Nick">Nick</label> <br> <br>
+
+        <input th:field="*{Nick}" id="Nick" type="text" class="lbl" placeholder="Digite seu Nick"> <br> <br>
+
+        <input type="submit" class="lbl" onclick="Enviar();" value="Enviar" /><br> <br><br> <br><br> <br>
+
+        </form>
+      
+      </main>
+      
+</body>
+</html>
